@@ -91,3 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// Máscara de preço
+$(document).ready(function(){
+    $('#precoProduto').mask('0000,00', {reverse: true});
+});
