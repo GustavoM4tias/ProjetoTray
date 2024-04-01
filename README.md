@@ -47,3 +47,61 @@
 >
 >![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/f25f8f92-b8e6-4150-aadf-01f646af8eef)
 ---
+
+## Tela 04
+
+>-**Arquivo**: tutorial/tela4.html
+>
+>-**Tela para o usuário selecionar as categorias de produtos que trabalha.**
+>
+>-**Print da tela**:
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/092f79e5-b709-48b3-971b-a4cae4d87195)
+---
+
+## Tela 05
+
+>-**Arquivo**: tutorial/tela5.html
+>
+>-**Essa tela tem como objetivo o usuário selecionar qual são os métodos de entrega que ele vai utilizar.**
+>
+>-**Print da tela**:
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/dfbf97c0-ed77-44ce-8b6d-78f6c072ea1b)
+---
+
+## Tela 06
+
+>-**Arquivo**: tutorial/tela6.html
+>
+>-**Objetivo dessa tela é o usuário selecionar qual método de pagamento ele vai utiizar.**
+>
+>-**Print da tela**:
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/e8d79fa1-781d-4a2f-8335-daa2c240e425)
+---
+
+## Tela 07
+
+>-**Arquivo**: tutorial/tela7.html
+>
+>-**Essa tela mostras as opções de templates padrões que o usuário pode utilizar**
+>
+>-**Print da tela**:
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/09e3aeea-3ba5-4f00-b2d0-b507ce771e16)
+---
+
+## Tela 08
+
+>-**Arquivo**: tutorial/tela8.html
+>
+>-**Essa tela tem como objetivo realizar o cadastro inicial de categoria e produto para assim realmente iniciar sua loja**
+>
+>-**Prints das telas**:
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/ec530dc4-1844-40cc-926c-dc326404a77e)
+>
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/8106e5a0-3c50-4529-8a17-ab8d72c571ce)
+
+---
