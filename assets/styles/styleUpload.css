@@ -1,0 +1,43 @@
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container-uploads {
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    height: 240px;
+    background-color: #d7d7d7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.container-uploads button {
+    margin-top: 20px;
+    margin: auto;
+    height: 50px;
+    width: 60%; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-uploads input[type="file"]::-webkit-file-upload-button {
+    background-color: #00468c;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
