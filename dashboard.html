@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEEV</title>
+    <style>
+      .highlight-container {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .produto {
+        padding: 20px;
+        gap: 10px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/menu-style.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MEGEV TRAY</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="uploadsProdutos.html"
+                    >Importar Produtos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela1.html">Nome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela2.html">Nome do Cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela3.html">Objetivo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela4.html">Categoria de Venda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela5.html">Método de Entrega</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela6.html">Métodos de Venda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela7.html">Template</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela8.html">Add Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="uploadsProdutos.html">Importar Produtos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center flex-column"
+    >
+      <div class="highlight-container col-md-5">
+        <div class="row">
+          <div class="form-group" id="adicionarCategoria">
+            <h2 class="text-center">
+              Adicione seus primeiros produtos e inicie suas vendas 🚀!
+            </h2>
+            <label for="categorias">Categorias de Produtos:</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="categorias"
+                placeholder="Digite as categorias de produtos"
+              />
+              <div class="input-group-append">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="btnAdicionarCategoria"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="form-group"
+            id="adicionarProdutoInput"
+            style="display: none"
+          >
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomeProduto"
+              placeholder="Nome do produto"
+            />
+            <label for="precoProduto">Preço do Produto:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="precoProduto"
+              placeholder="Preço do produto"
+            />
+            <label for="descricaoProduto">Descrição do Produto:</label>
+            <textarea
+              class="form-control"
+              id="descricaoProduto"
+              placeholder="Descrição do produto"
+            ></textarea>
+            <div class="form-group">
+              <label for="categoriaProdutoAdicionar"
+                >Categoria do Produto:</label
+              >
+              <select
+                class="form-control"
+                id="categoriaProdutoAdicionar"
+              ></select>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary mt-3"
+              id="btnSalvarProduto"
+              onclick="VoltarProdutos()"
+            >
+              Salvar Produto
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger mt-3"
+              id="btnCancelarProduto"
+              onclick="VoltarProdutos()"
+            >
+              Cancelar
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary mt-3"
+            id="btnAdicionarProduto"
+            onclick="AddProduto()"
+          >
+            Adicionar Produto
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary mt-2"
+            id="verProdutos"
+            onclick="VerProdutos()"
+          >
+            Ver Produtos
+          </button>
+          <div id="categoriasAdicionadas">
+            <h3 class="mt-5">Categorias de Produtos</h3>
+          </div>
+
+          <div id="produtosAdicionados" style="display: none">
+            <h3 class="mt-5">Produtos Adicionados</h3>
+
+            <button
+              type="button"
+              class="btn btn-primary mt-2"
+              id="voltarProdutos"
+              onclick="VoltarListaProdutos()"
+            >
+              voltar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function AddProduto() {
+        inputCategoria = document.getElementById("adicionarCategoria");
+        btnproduto = document.getElementById("btnAdicionarProduto");
+        categorias = document.querySelector("#categoriasAdicionadas");
+        adicionados = document.querySelector("#produtosAdicionados");
+        btnVerProdutos = document.querySelector("#verProdutos");
+
+        inputCategoria.style.display = "none";
+        btnproduto.style.display = "none";
+        categorias.style.display = "none";
+        adicionados.style.display = "none";
+        btnVerProdutos.style.display = "none";
+      }
+
+      function VoltarProdutos() {
+        categoria = document.getElementById("adicionarCategoria");
+        produto = document.getElementById("adicionarProdutoInput");
+        btnproduto = document.getElementById("btnAdicionarProduto");
+        categorias = document.querySelector("#categoriasAdicionadas");
+        adicionados = document.querySelector("#produtosAdicionados");
+        btnVerProdutos = document.querySelector("#verProdutos");
+
+        categoria.style.display = "block";
+        produto.style.display = "none";
+        btnproduto.style.display = "block";
+        categorias.style.display = "block";
+        adicionados.style.display = "none";
+        btnVerProdutos.style.display = "block";
+      }
+
+      function VerProdutos() {
+        inputCategoria = document.getElementById("adicionarCategoria");
+        btnproduto = document.getElementById("btnAdicionarProduto");
+        categorias = document.querySelector("#categoriasAdicionadas");
+        adicionados = document.querySelector("#produtosAdicionados");
+        btnVerProdutos = document.querySelector("#verProdutos");
+
+        inputCategoria.style.display = "none";
+        btnproduto.style.display = "none";
+        categorias.style.display = "block";
+        adicionados.style.display = "block";
+        btnVerProdutos.style.display = "none";
+      }
+      function VoltarListaProdutos() {
+        inputCategoria = document.getElementById("adicionarCategoria");
+        btnproduto = document.getElementById("btnAdicionarProduto");
+        categorias = document.querySelector("#categoriasAdicionadas");
+        adicionados = document.querySelector("#produtosAdicionados");
+        btnVerProdutos = document.querySelector("#verProdutos");
+
+        inputCategoria.style.display = "block";
+        btnproduto.style.display = "block";
+        categorias.style.display = "block";
+        adicionados.style.display = "none";
+        btnVerProdutos.style.display = "block";
+      }
+
+      function formatarMoeda(valor) {
+        return new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(valor);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var cards = document.querySelectorAll(".card");
+
+        cards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            cards.forEach(function (c) {
+              c.classList.remove("selected");
+            });
+            card.classList.add("selected");
+          });
+        });
+
+        var categoriasInput = document.getElementById("categorias");
+        var adicionarProdutoInput = document.getElementById(
+          "adicionarProdutoInput"
+        );
+        var btnAdicionarProduto = document.getElementById(
+          "btnAdicionarProduto"
+        );
+        var btnSalvarProduto = document.getElementById("btnSalvarProduto");
+        var btnAdicionarCategoria = document.getElementById(
+          "btnAdicionarCategoria"
+        );
+        var categoriasAdicionadas = document.getElementById(
+          "categoriasAdicionadas"
+        );
+        var produtosAdicionados = document.getElementById(
+          "produtosAdicionados"
+        );
+        var selectCategoriaProduto = document.getElementById(
+          "categoriaProdutoAdicionar"
+        );
+
+        btnAdicionarProduto.addEventListener("click", function () {
+          adicionarProdutoInput.style.display = "block";
+        });
+
+        btnSalvarProduto.addEventListener("click", function () {
+          event.preventDefault();
+          var nomeProduto = document.getElementById("nomeProduto").value;
+          var precoProduto = document.getElementById("precoProduto").value;
+          var descricaoProduto =
+            document.getElementById("descricaoProduto").value;
+          var categoriaProduto = selectCategoriaProduto.value;
+
+          precoProduto = formatarMoeda(precoProduto);
+
+          var produtoDiv = document.createElement("div");
+          produtoDiv.classList.add("produto");
+          produtoDiv.innerHTML =
+            "<strong>Nome:</strong> " +
+            nomeProduto +
+            "<br>" +
+            "<strong>Preço:</strong> R$ " +
+            precoProduto +
+            "<br>" +
+            "<strong>Descrição:</strong> " +
+            descricaoProduto +
+            "<br>" +
+            "<strong>Categoria:</strong> " +
+            categoriaProduto +
+            "<br>" +
+            '<button type="button" class="btn btn-danger btn-excluir">Excluir</button>';
+
+          // Limpar os campos do formulário de adicionar produto
+          document.getElementById("nomeProduto").value = "";
+          document.getElementById("precoProduto").value = "";
+          document.getElementById("descricaoProduto").value = "";
+
+          adicionarProdutoInput.style.display = "none";
+
+          // Adicionar evento de excluir
+          var btnExcluir = produtoDiv.querySelector(".btn-excluir");
+          btnExcluir.addEventListener("click", function () {
+            // Lógica para excluir o produto
+            produtoDiv.remove();
+          });
+        });
+
+        btnAdicionarCategoria.addEventListener("click", function () {
+          var categorias = categoriasInput.value.trim();
+          if (categorias !== "") {
+            categorias.split(",").forEach(function (categoria) {
+              categoria = categoria.trim();
+              if (categoria !== "") {
+                var categoriaDiv = document.createElement("div");
+                categoriaDiv.classList.add("categoria");
+                categoriaDiv.innerHTML =
+                  categoria + '<i class="fas fa-trash-alt"></i>';
+                categoriasAdicionadas.appendChild(categoriaDiv);
+
+                // Adicionar categoria ao seletor de categorias de produtos
+                var option = document.createElement("option");
+                option.text = categoria;
+                option.value = categoria;
+                selectCategoriaProduto.appendChild(option);
+              }
+            });
+            categoriasInput.value = ""; // Limpar o input
+          }
+        });
+
+        // Preencher o seletor de categoria do produto com as categorias adicionadas
+        var selectCategoriaProduto = document.getElementById(
+          "categoriaProdutoAdicionar"
+        );
+        categoriasAdicionadas
+          .querySelectorAll(".categoria")
+          .forEach(function (categoriaDiv) {
+            var option = document.createElement("option");
+            option.text = categoriaDiv.textContent.trim();
+            option.value = categoriaDiv.textContent.trim();
+            selectCategoriaProduto.appendChild(option);
+          });
+
+        // Adicionar evento de excluir categoria
+        categoriasAdicionadas.addEventListener("click", function (event) {
+          if (event.target.classList.contains("fa-trash-alt")) {
+            event.target.parentNode.remove();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

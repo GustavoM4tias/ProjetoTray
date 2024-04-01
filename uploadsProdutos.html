@@ -5,54 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Importar - Produtos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/styles/styleUpload.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/styles/styleUpload.css" />
+    <link rel="stylesheet" href="assets/styles/menu-style.css">
+    <style>
+    .importarProduto{
+        margin-top: 250px;
+    }
+    </style>
+  </head>
+  <body>
+
+
     <div class="container">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="tela8.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Importar Tabela</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MEGEV TRAY</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="uploadsProdutos.html"
+                    >Importar Produtos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela1.html">Nome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela2.html">Nome do Cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela3.html">Objetivo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela4.html">Categoria de Venda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela5.html">Método de Entrega</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela6.html">Métodos de Venda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela7.html">Template</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu/tela8.html">Add Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="uploadsProdutos.html">Importar Produtos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
 
-    <div class="container-uploads">
+    <div
+      class="importarProduto container-fluid d-flex justify-content-center align-items-center flex-column"
+    >
         <h2>Importar Tabela De Produto</h2>
         <form method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
             </div>
-            <button type="submit" class="btn btn-success">Upload</button>
+            <button type="sumit" class="btn btn-success">Upload</button>
         </form>
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
