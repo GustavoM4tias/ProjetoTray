@@ -22,6 +22,7 @@
 >-**Tela para o usuário cadastrar seu nome.**
 >
 >-**Print da tela**:
+>
 >![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/e7b95c60-3247-4b59-8b54-aafab4cab731)
 ---
 
@@ -32,6 +33,7 @@
 >-**Tela para o usuário adicionar o nome de sua loja.**
 >
 >-**Print da tela**:
+>
 >![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/47a2e61f-c222-48cb-90c2-d6dd8102f1a6)
 ---
 
@@ -42,5 +44,6 @@
 >-**Tela para o usuário selecionar qual seu principal objetivo com o sistema.**
 >
 >-**Print da tela**:
+>
 >![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/f25f8f92-b8e6-4150-aadf-01f646af8eef)
 ---
