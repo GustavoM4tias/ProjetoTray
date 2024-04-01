@@ -38,17 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
                            '<button type="button" class="btn btn-danger btn-excluir">Excluir</button>';
     produtosAdicionados.appendChild(produtoDiv);
 
-    // Limpar os campos do formulário de adicionar produto
     document.getElementById('nomeProduto').value = '';
     document.getElementById('precoProduto').value = '';
     document.getElementById('descricaoProduto').value = '';
 
     adicionarProdutoInput.style.display = 'none';
 
-    // Adicionar evento de excluir
     var btnExcluir = produtoDiv.querySelector('.btn-excluir');
     btnExcluir.addEventListener('click', function () {
-      // Lógica para excluir o produto
       produtoDiv.remove();
     });
   });
@@ -64,18 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
           categoriaDiv.innerHTML = categoria + '<i class="fas fa-trash-alt"></i>';
           categoriasAdicionadas.appendChild(categoriaDiv);
 
-          // Adicionar categoria ao seletor de categorias de produtos
           var option = document.createElement('option');
           option.text = categoria;
           option.value = categoria;
           selectCategoriaProduto.appendChild(option);
         }
       });
-      categoriasInput.value = ''; // Limpar o input
+      categoriasInput.value = ''; 
     }
   });
 
-  // Preencher o seletor de categoria do produto com as categorias adicionadas
   var selectCategoriaProduto = document.getElementById('categoriaProdutoAdicionar');
   categoriasAdicionadas.querySelectorAll('.categoria').forEach(function (categoriaDiv) {
       var option = document.createElement('option');
@@ -84,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
       selectCategoriaProduto.appendChild(option);
   });
 
-  // Adicionar evento de excluir categoria
   categoriasAdicionadas.addEventListener('click', function (event) {
     if (event.target.classList.contains('fa-trash-alt')) {
       event.target.parentNode.remove();
@@ -92,7 +86,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Máscara de preço
-$(document).ready(function(){
-    $('#precoProduto').mask('0000,00', {reverse: true});
-});
