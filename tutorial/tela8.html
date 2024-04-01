@@ -111,11 +111,19 @@
           </div>
           <button
             type="button"
-            class="btn btn-primary mt-3"
+            class="btn btn-primary mt-2"
             id="btnAdicionarProduto"
             onclick="AddProduto()"
           >
             Adicionar Produto
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary mt-2"
+            id="importarProdutos"
+            onclick="importProduts()"
+          >
+            Importar Produto
           </button>
           <button
             type="button"
@@ -164,69 +172,82 @@
     ></script>
 
     <script>
-      function AddProduto() {
-        inputCategoria = document.getElementById("adicionarCategoria");
-        btnproduto = document.getElementById("btnAdicionarProduto");
-        categorias = document.querySelector("#categoriasAdicionadas");
-        adicionados = document.querySelector("#produtosAdicionados");
-        btnVerProdutos = document.querySelector("#verProdutos");
-        iniciarLoja = document.querySelector("#iniciarLoja");
 
-        inputCategoria.style.display = "none";
-        btnproduto.style.display = "none";
-        categorias.style.display = "none";
-        adicionados.style.display = "none";
-        btnVerProdutos.style.display = "none";
-        iniciarLoja.style.display = "none";
+      function importProduts() {
+        window.location.href = "uploadsProdutos.html"
+      }
+
+      function AddProduto() {
+        inputCategoria = document.getElementById("adicionarCategoria")
+        btnproduto = document.getElementById("btnAdicionarProduto")
+        categorias = document.querySelector("#categoriasAdicionadas")
+        adicionados = document.querySelector("#produtosAdicionados")
+        btnVerProdutos = document.querySelector("#verProdutos")
+        iniciarLoja = document.querySelector("#iniciarLoja")
+        importarProduto = document.querySelector("#importarProdutos")
+
+        inputCategoria.style.display = "none"
+        btnproduto.style.display = "none"
+        categorias.style.display = "none"
+        adicionados.style.display = "none"
+        btnVerProdutos.style.display = "none"
+        iniciarLoja.style.display = "none"
+        importarProduto.style.display = "none"
       }
 
       function VoltarProdutos() {
-        categoria = document.getElementById("adicionarCategoria");
-        produto = document.getElementById("adicionarProdutoInput");
-        btnproduto = document.getElementById("btnAdicionarProduto");
-        categorias = document.querySelector("#categoriasAdicionadas");
-        adicionados = document.querySelector("#produtosAdicionados");
-        btnVerProdutos = document.querySelector("#verProdutos");
-        iniciarLoja = document.querySelector("#iniciarLoja");
+        categoria = document.getElementById("adicionarCategoria")
+        produto = document.getElementById("adicionarProdutoInput")
+        btnproduto = document.getElementById("btnAdicionarProduto")
+        categorias = document.querySelector("#categoriasAdicionadas")
+        adicionados = document.querySelector("#produtosAdicionados")
+        btnVerProdutos = document.querySelector("#verProdutos")
+        iniciarLoja = document.querySelector("#iniciarLoja")
+        importarProduto = document.querySelector("#importarProdutos")
 
-        categoria.style.display = "block";
-        produto.style.display = "none";
-        btnproduto.style.display = "block";
-        categorias.style.display = "block";
-        adicionados.style.display = "none";
-        btnVerProdutos.style.display = "block";
-        iniciarLoja.style.display = "block";
+        categoria.style.display = "block"
+        produto.style.display = "none"
+        btnproduto.style.display = "block"
+        categorias.style.display = "block"
+        adicionados.style.display = "none"
+        btnVerProdutos.style.display = "block"
+        iniciarLoja.style.display = "block"
+        importarProduto.style.display = "block"
       }
 
       function VerProdutos() {
-        inputCategoria = document.getElementById("adicionarCategoria");
-        btnproduto = document.getElementById("btnAdicionarProduto");
-        categorias = document.querySelector("#categoriasAdicionadas");
-        adicionados = document.querySelector("#produtosAdicionados");
-        btnVerProdutos = document.querySelector("#verProdutos");
-        iniciarLoja = document.querySelector("#iniciarLoja");
+        inputCategoria = document.getElementById("adicionarCategoria")
+        btnproduto = document.getElementById("btnAdicionarProduto")
+        categorias = document.querySelector("#categoriasAdicionadas")
+        adicionados = document.querySelector("#produtosAdicionados")
+        btnVerProdutos = document.querySelector("#verProdutos")
+        iniciarLoja = document.querySelector("#iniciarLoja")
+        importarProduto = document.querySelector("#importarProdutos")
 
-        inputCategoria.style.display = "none";
-        btnproduto.style.display = "none";
-        categorias.style.display = "block";
-        adicionados.style.display = "block";
-        btnVerProdutos.style.display = "none";
-        iniciarLoja.style.display = "none";
+        inputCategoria.style.display = "none"
+        btnproduto.style.display = "none"
+        categorias.style.display = "block"
+        adicionados.style.display = "block"
+        btnVerProdutos.style.display = "none"
+        iniciarLoja.style.display = "none"
+        importarProduto.style.display = "none"
       }
       function VoltarListaProdutos() {
-        inputCategoria = document.getElementById("adicionarCategoria");
-        btnproduto = document.getElementById("btnAdicionarProduto");
-        categorias = document.querySelector("#categoriasAdicionadas");
-        adicionados = document.querySelector("#produtosAdicionados");
-        btnVerProdutos = document.querySelector("#verProdutos");
-        iniciarLoja = document.querySelector("#iniciarLoja");
+        inputCategoria = document.getElementById("adicionarCategoria")
+        btnproduto = document.getElementById("btnAdicionarProduto")
+        categorias = document.querySelector("#categoriasAdicionadas")
+        adicionados = document.querySelector("#produtosAdicionados")
+        btnVerProdutos = document.querySelector("#verProdutos")
+        iniciarLoja = document.querySelector("#iniciarLoja")
+        importarProduto = document.querySelector("#importarProdutos")
 
-        inputCategoria.style.display = "block";
-        btnproduto.style.display = "block";
-        categorias.style.display = "block";
-        adicionados.style.display = "none";
-        btnVerProdutos.style.display = "block";
-        iniciarLoja.style.display = "block";
+        inputCategoria.style.display = "block"
+        btnproduto.style.display = "block"
+        categorias.style.display = "block"
+        adicionados.style.display = "none"
+        btnVerProdutos.style.display = "block"
+        iniciarLoja.style.display = "block"
+        importarProduto.style.display = "block"
       }
     </script>
   </body>
