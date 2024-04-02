@@ -96,12 +96,12 @@
 
 >-*Arquivo*: tutorial/tela8.html
 > 
->-**Essatela tem como objetivo o cadastro da primeira categoria e produto para sair do tutorial e iniciar a loja virtual.
+>-**Essa tela tem como objetivo o cadastro da primeira categoria e produto para sair do tutorial e iniciar a loja virtual.
 >OBS: Nessa tela você consegue cadastrar e listrar os dados que foram cadastrados.**
 > 
 >-*Prints das telas*:
 > 
->![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/ec530dc4-1844-40cc-926c-dc326404a77e)
+>![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/5225fa93-efbb-49de-a7e6-2828dca68dfa)
 > 
 >![image](https://github.com/GustavoM4tias/ProjetoTray/assets/127625388/7bffd8ab-69d8-4455-8145-a6dc26294266)
 > 
