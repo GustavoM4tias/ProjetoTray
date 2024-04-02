@@ -22,7 +22,7 @@
 
 >-**Arquivo**: tutorial/tela1.html
 > 
->-**Essa tela é para o usuário cadastrar o seu nome**
+>-**Essa tela é para o usuário cadastrar o seu nome.**
 > 
 >-**Print da tela**:
 > 
