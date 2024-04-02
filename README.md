@@ -115,7 +115,7 @@
 
 >-**Arquivo**: dashboard.html
 >
->-**Essa é a tela principal após a conclusão do tutorial, nela é possível alterar todos os dados cadastro e realizar o upload de um arquivo CSV para cadastrar os produtos em massa.**
+>-**Essa é a tela principal após a conclusão do tutorial, nela é possível alterar todos os dados cadastrados.**
 >
 >-**Print da tela**:
 >
